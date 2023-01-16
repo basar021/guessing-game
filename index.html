@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing Game</title>
+
+    <!-- Google Font -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Raleway:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+
+            <div class="card-title">
+                <h1> Guessing Game</h1>
+            </div>
+
+            <div class="card-body">
+                <form action="#">
+                    <label for="gusseingNumber"> Guess a number between 1-6: </label>
+                    <div class="form-area">
+                        <input 
+                            type="number"
+                            id="gusseingNumber"
+                            min="1"
+                            max="6"
+                            required
+                        >
+                        <div class="buttons">
+                            <button id="check" class="btn" type="submit"> Check Result </button>
+                        </div>
+                    </div>
+
+
+                </form>
+
+                <p class="resultText"></p>
+                <p class="remainingAttempts"></p>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
